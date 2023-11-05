@@ -16,15 +16,15 @@ function addString(strA){
 
 
 //複数の関数表示
-let user_jand = prompt('じゃんけんの手をぐー、チョキ、パーから選んでください');
+let user_hand = prompt('じゃんけんの手をぐー、チョキ、パーから選んでください');
 
-let js_hand = getJSjand();
+let js_hand = getJShand();
 
 let judge = winLose(user_hand, js_hand);
 
 alert('あなたの選んだ手は' + user_hand + 'です。\nJavascriptの選んだ手は' + js_hand + 'です。\n結果は' + judge + 'です');
 
-function getJSjand(){
+function getJShand(){
    let js_hand_num = Math.floor(Math.random() * 3);
    let hand_name;
 
